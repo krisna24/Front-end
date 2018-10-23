@@ -1,0 +1,43 @@
+body {
+
+background-color: #eef0ef;
+width: 900px;
+float:left;
+margin-left: 250px;
+
+}
+
+
+.container-header1{
+margin: 40px;
+
+
+}
+.navbar-brand1{
+margin-left: 250px;
+float:left;
+margin-right: 60px;
+
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover::after {
+  content: "";
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  bottom: -20%;
+  border: 3px solid orange;
+}
+.containercenter
+{
+
+  background-color: #eef0ef;
+  float:left;
+  margin-left: 400px;
+  align-content: center;
+}

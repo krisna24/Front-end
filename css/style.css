@@ -1,0 +1,581 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body{
+      height: 100%;
+      font-family: 'Josefin+Sans', sans-serif;
+      }
+
+/* The side navigation menu */
+
+.link {
+  transition: 0.3s ease;
+  background: rgba(0,0,0, 0.8);
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid rgba(0,0,0, 0.8);
+  border-bottom: 4px solid rgba(0,0,0, 0.8);
+  padding: ;
+  margin: ;
+}
+.link:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0;
+}
+
+/* main */
+
+.main{
+
+margin-left: 0px;
+margin-righ:0px;
+
+}
+
+
+
+.full-width-row {
+  overflow-x: hidden;
+}
+
+.full-width-row > div {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+          .sidenav {
+              height: 100%; /* 100% Full-height */
+              width: 0; /* 0 width - change this with JavaScript */
+              position:fixed; /* Stay in place */
+              z-index: 1; /* Stay on top */
+              top: 0;
+              left: 0;
+              background-color:black; /* Black*/
+              overflow-x: hidden; /* Disable horizontal scroll */
+              padding-top: 60px; /* Place content 60px from the top */
+              transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+          }
+
+
+          /* The navigation menu links */
+          .sidenav a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 15px;
+              color:white;
+              display:inherit;
+              transition: 0.3s;
+              margin-top: 30px;
+
+          }
+
+          /* When you mouse over the navigation links, change their color */
+          .sidenav a:hover, .offcanvas a:focus{
+              color:#0381c4;
+          }
+
+          /* Position and style the close button (top right corner) */
+          .sidenav .closebtn {
+              position: absolute;
+              top: 0;
+              margin-right:15px;
+              font-size: 17px;
+              transition:visibility 0s,transform .8s;
+
+          }
+
+          /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+          #main {
+              transition: margin-left .5s;
+              overflow:hidden;
+              width:100%;
+          }
+
+/* Add a black background color to the top navigation */
+            .topnav {
+                background-color:black;
+                overflow: hidden;
+                padding-left:30px;
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color:#0381c4;
+                text-decoration: none;
+                font-size: 25px;
+                margin-top: 20px;
+
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color:black;
+                color:#0381c4;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color:black;
+                color: deepskyblue;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 70px;}
+
+
+            }
+
+            .textnav{
+            font-size: 20px;
+            color:#0381c4;
+            margin-top: 200px;
+          }
+
+            a svg{
+              color: white;
+              transition:all .5s ease;
+
+              &:hover{
+                #transform:rotate(180deg);
+              }
+            }
+
+            #ico{
+              display: none;
+            }
+
+
+
+            .menu{
+              background: #000;
+              display: none;
+
+              width: 320px;
+              @include border-radius(5px);
+
+              #transition: all 0.5s ease;
+
+              a{
+                display: block;
+                color:white;
+                text-align: center;
+                padding: 10px 2px;
+                margin: 3px 0;
+                text-decoration: none;
+                background: #444;
+
+                &:nth-child(1){
+                  margin-top: 0;
+                  @include border-radius(3px 3px 0 0 );
+                }
+                &:nth-child(5){
+                  margin-bottom: 0;
+                  @include border-radius(0 0 3px 3px);
+                }
+
+                &:hover{
+                  background:#0381c4;
+                }
+              }
+            }
+
+
+/*carousel*/
+
+
+            .carousel-item {
+            width: 100%; /*slider width*/
+            max-height:auto; /*slider height*/
+            }
+            .carousel-item img {
+            width: 100%; /*img width*/
+            }
+            /*full width container*/
+            @media (max-width: 767px) {
+            .block {
+            margin-left: -20px;
+            margin-right: -20px;
+            }
+            }
+            .corousel-item img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+
+            }
+            .carousel-indicators .active {
+                background-color: rgba(0, 0, 0);
+            }
+
+
+            .carousel-indicators li {
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                background-color: rgba(110, 110, 110);
+            }
+
+            .carousel-caption {
+                color: white;
+                position: absolute;
+                margin-top: 30px;
+                margin-left: 30px;
+                left: 670px;
+                top: 300px;
+                text-align: justify;
+            }
+
+            .carousel-caption .caption-header {
+                border-bottom: 2px solid rgba(165, 123, 25);
+                margin-bottom: 10px;
+                text-align:justify;
+            }
+            .carousel-caption .caption-body {
+
+            }
+
+            .carousel-control-prev-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#606061' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+            }
+            .carousel-control-next-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#606061' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+            }
+
+
+
+/*Header*/
+/*  breadcrumb*/
+
+.content1 img{
+  width: 100%;
+  height: auto;
+}
+.bread1{
+  position: absolute;
+      top: 8px;
+      color:white;
+      font-family: Raleway;
+      font-size: 12px;
+}
+
+
+
+
+/* LAYANAN */
+
+    .layanan1{
+      font-family:  Raleway;
+      font-size: 20px;
+    }
+    .layanan1 h2{
+      margin-bottom: 45px;
+
+    }
+
+
+
+
+/* visi misi */
+.visimisi{
+  background-color: #0a0a0a;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  color: white;
+  font-family: Raleway;
+  font-size: 18px;
+
+}
+.visimisi li{
+  margin-left: 370px;
+}
+
+.visimisi h2{
+ color: #FFA500;
+ margin-bottom: 70px;
+ font-size: 50px;
+}
+.visimisi b{
+ font-size: 26px;
+
+}
+
+
+.media img{
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+/*HUBUNGI KAMI*/
+
+                .container .header1 .coloum1{
+
+                padding-top: 40px;
+                text-align:left;
+                font-family:Josefin+Sans;
+                font-size: 12px;
+                padding-left: 20px;
+
+                }
+                .container .header1 .coloum2{
+                padding-top: 40px;
+                text-align:left;
+                font-family:Josefin+Sans;
+                font-size: 12px;
+
+
+                }
+
+                .container .header1 .coloum2 .form-control{
+                margin-bottom: 10px;
+                }
+
+                .container .header1 .coloum2 .form-control-lg {
+                height: 100px;
+
+                }
+                .container .header1 .coloum2 .btn {
+                align-content: flex-end;
+                }
+
+
+                .misi-1{
+                background-color: #0a0a0a;
+                font-family: Raleway;
+                font-size: 18px;
+                }
+
+                .MISI p {
+                color: white;
+                font-size: 18px;
+                  }
+                .MISI h2 {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                color: white;
+
+
+                }
+
+                .MITRA{
+                  background-color: #0a0a0a;
+
+                }
+
+                .MITRA img{
+                  width: 100%;
+                  height: auto;
+                }
+
+                .content3{
+                padding-bottom: 50px;
+                padding-top: 30px;
+                font-size: 12px;
+                font-family:  'Raleway', sans-serif;
+
+
+                }
+
+/* OURSERVICE */
+
+.ourservice h5{
+    font-family: Raleway;
+
+
+}
+
+
+/* FOOTER */
+  .footer{
+
+
+                background-color:#0e0e0e;
+                color: white;
+                font-size: 12px;
+                padding-bottom: 30px;
+
+                }
+                .footer h6{
+                margin-top: 40px;
+                margin-bottom: 50px;
+                color: white;
+                font-weight: bold;
+                font-family: 'Raleway', sans-serif;
+                }
+
+                .sbx-spotify {
+                  display: inline-block;
+                  position: relative;
+                  width: 200px;
+                  height: 25px;
+                  white-space: nowrap;
+                  box-sizing: border-box;
+                  font-size: 12px;
+                }
+
+                .sbx-spotify__wrapper {
+                  width: 100%;
+                  height: 100%;
+                }
+
+                .sbx-spotify__input {
+                  display: inline-block;
+                  transition: box-shadow .4s ease, background .4s ease;
+                  border: 0;
+                  border-radius: 13px;
+                  box-shadow: inset 0 0 0 0px #FFFFFF;
+                  background: #FFFFFF;
+                  padding: 0;
+                  padding-right: 20px;
+                  padding-left: 25px;
+                  width: 100%;
+                  height: 100%;
+                  vertical-align: middle;
+                  white-space: normal;
+                  font-size: inherit;
+                  appearance: none;
+                }
+
+                .sbx-spotify__input::-webkit-search-decoration, .sbx-spotify__input::-webkit-search-cancel-button, .sbx-spotify__input::-webkit-search-results-button, .sbx-spotify__input::-webkit-search-results-decoration {
+                  display: none;
+                }
+
+                .sbx-spotify__input:hover {
+                  box-shadow: inset 0 0 0 0px #e6e6e6;
+                }
+
+                .sbx-spotify__input:focus, .sbx-spotify__input:active {
+                  outline: 0;
+                  box-shadow: inset 0 0 0 0px #FFFFFF;
+                  background: #FFFFFF;
+                }
+
+                .sbx-spotify__input::placeholder {
+                  color: #AAAAAA;
+                }
+
+                .sbx-spotify__submit {
+                  position: absolute;
+                  top: 0;
+                  right: inherit;
+                  left: 0;
+                  margin: 0;
+                  border: 0;
+                  border-radius: 12px 0 0 12px;
+                  background-color: rgba(255, 255, 255, 0);
+                  padding: 0;
+                  width: 25px;
+                  height: 100%;
+                  vertical-align: middle;
+                  text-align: center;
+                  font-size: inherit;
+                  user-select: none;
+                }
+
+                .sbx-spotify__submit::before {
+                  display: inline-block;
+                  margin-right: -4px;
+                  height: 100%;
+                  vertical-align: middle;
+                  content: '';
+                }
+
+                .sbx-spotify__submit:hover, .sbx-spotify__submit:active {
+                  cursor: pointer;
+                }
+
+                .sbx-spotify__submit:focus {
+                  outline: 0;
+                }
+
+                .sbx-spotify__submit svg {
+                  width: 17px;
+                  height: 17px;
+                  vertical-align: middle;
+                  fill: #222222;
+                }
+
+                .sbx-spotify__reset {
+                  display: none;
+                  position: absolute;
+                  top: 2px;
+                  right: 2px;
+                  margin: 0;
+                  border: 0;
+                  background: none;
+                  cursor: pointer;
+                  padding: 0;
+                  font-size: inherit;
+                  user-select: none;
+                  fill: rgba(0, 0, 0, 0.5);
+                }
+
+                .sbx-spotify__reset:focus {
+                  outline: 0;
+                }
+
+                .sbx-spotify__reset svg {
+                  display: block;
+                  margin: 4px;
+                  width: 13px;
+                  height: 13px;
+                }
+
+                .sbx-spotify__input:valid ~ .sbx-spotify__reset {
+                  display: block;
+                  animation-name: sbx-reset-in;
+                  animation-duration: .15s;
+                }
+
+                @keyframes sbx-reset-in {
+                  0% {
+                    transform: translate3d(-20%, 0, 0);
+                    opacity: 0;
+                  }
+                  100% {
+                    transform: none;
+                    opacity: 1;
+                  }
+
+
+                  }
+/*ABOUT*/
+
+                  .tentang-kami{
+                    padding-bottom: 50px;
+                    font-size: 18px;
+                    font-family: Raleway;
+                    padding-left: 20px;
+                  }
+                  .tentang-kami h4{
+                  font-weight: bold;
+                  font-size: 30px;
+
+
+
+                  }
+
+
+/*  POP UP*/
